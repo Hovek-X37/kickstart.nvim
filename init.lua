@@ -23,7 +23,7 @@ opt.inccommand = 'split'
 opt.cursorline = true
 opt.scrolloff = 10
 opt.hlsearch = true
-.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
 --vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
@@ -56,7 +56,7 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
-  -- { import = 'plugins' },
+{ import = 'plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
